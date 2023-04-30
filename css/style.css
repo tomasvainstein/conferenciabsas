@@ -1,0 +1,148 @@
+/* Encabezado */
+
+.navbar {
+    top: 0;
+    background-color: rgb(53, 58, 64);
+    padding: 0.5rem 5%;
+}
+
+/* Imagen y textos principales */
+
+.backgroundImage {
+    background-image: url(../assets/img/hawaii.jpg);
+    height: 88vh;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5em;
+    align-items: center;
+    background-color: rgba(48, 54, 54, 0.856);
+    background-blend-mode: soft-light;
+}
+
+.parrafo {
+    top: 40%;
+    z-index: 700;
+    padding-right: 2rem;
+}
+
+.parrafo p {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/* Oradores */
+
+#oradores {
+    padding-top: 5em;
+    /* padding: 0.5rem 15%; */
+}
+
+#oradores .row {
+    padding: 1rem 5%;
+}
+
+#oradores .card-title {
+    font-size: 1.8rem;
+}
+
+.card-img-top {
+    aspect-ratio: 1;
+}
+
+/* Lugar y fechas */
+
+.texto {
+    padding-top: 1.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.lugarfecha {
+    background-color: rgba(53, 58, 64, 255);
+}
+
+.lugarfecha p {
+    font-size: 1.1em;
+}
+
+.imagen {
+    padding: 0;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: rgb(255, 255, 255);
+}
+
+#lugaryfecha {
+    padding-top: 5em;
+}
+
+/* Conviértete en orador */
+
+#quieroserorador {
+    margin-bottom: 1.5em;
+}
+
+#quieroserorador .titulo_unite {
+    margin-top: 1.5em;
+}
+
+#quieroserorador .row {
+    padding: 0.5rem 15%;
+}
+
+#quieroserorador .col {
+    margin-bottom: 1em;
+}
+
+#quieroserorador .pregunta {
+    font-size: 1.5rem;
+}
+
+#quieroserorador .recordatorio {
+    color: rgb(75, 75, 75);
+}
+
+#quieroserorador .btn {
+    background-color: rgba(150, 201, 62, 255);
+    border-color: rgba(150, 201, 62, 255);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+#quieroserorador .btn:hover {
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(150, 201, 62, 255);
+    color: rgba(150, 201, 62, 255);
+}
+
+.subrayado {
+    border-bottom: 1px dotted black;
+    text-decoration: none;
+}
+
+.recordatorio {
+    text-align: left;
+}
+
+/* Footer */
+
+.footer-style {
+    background-color: rgb(29, 80, 109);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav {
+    text-align: center;
+    align-items: center;
+}
+
+#footer a {
+    width: 8rem;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+
+#footer a:hover {
+    color: rgb(0, 0, 0);
+}
