@@ -34,7 +34,7 @@
                         <a class="nav-link" href="#oradores">Los oradores</a>
                         <a class="nav-link" href="#lugaryfecha">El lugar y la fecha</a>
                         <a class="nav-link" href="#quieroserorador">Conviértete en orador</a>
-                        <a class="nav-link text-success" href="#comprar">Comprar tickets</a>
+                        <a class="nav-link text-success" href="#compratickets">Comprar tickets</a>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@
     <section id="oradores">
         <div class="container text-center">
             <div class="titulo_oradores">
-                <h8>CONOCE A LOS</h8>
+                <h6>CONOCE A LOS</h6>
                 <h2>ORADORES</h2>
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -156,7 +156,7 @@
     <section id="quieroserorador">
         <div class="container text-center">
             <div class="titulo_unite">
-                <h8>CONVIÉRTETE EN UN</h8>
+                <h6>CONVIÉRTETE EN UN</h6>
                 <h2>ORADOR</h2>
             </div>
             <p>
@@ -181,6 +181,73 @@
                     <button class="btn" type="button">Enviar</button>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Compra tickets -->
+
+    <section id="compratickets">
+        <div class="container text-center">
+            <form id="formulario">
+                <div class="categorias">
+                    <div class="estudiante">
+                        <h4>
+                            Estudiante
+                        </h4>
+                        <p>Tienen un descuento</p>
+                        <span>80%</span>
+                        <p class="condicion">* presentar documentación</p>
+                    </div>
+                    <div class="trainee">
+                        <h4>
+                            Trainee
+                        </h4>
+                        <p>Tienen un descuento</p>
+                        <span>50%</span>
+                        <p class="condicion">* presentar documentación</p>
+                    </div>
+                    <div class="junior">
+                        <h4>
+                            Junior
+                        </h4>
+                        <p>Tienen un descuento</p>
+                        <span>15%</span>
+                        <p class="condicion">* presentar documentación</p>
+                    </div>
+                </div>
+                <div class="titulo_unite">
+                    <h6>VENTA</h6>
+                    <h2>VALOR DE TICKETS $200</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" id="nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" id="apellido">
+                    </div>
+                    <div class="mb-3">
+                        <input type="correo" class="form-control" placeholder="Correo" id="direcciondecorreo">
+                    </div>
+                    <div class="col">
+                        <label for="cantidad" class="form-label">Cantidad</label>
+                        <input type="number" min="1" class="form-control" placeholder="Cantidad" id="cantidad">
+                    </div>
+                    <div class="col">
+                        <label for="categoria" class="form-label">Categoría</label>
+                        <select id="categoria" class="form-select" id="floatingSelectGrid" name="Categorias">
+                            <option value="0" selected>Estudiante</option>
+                            <option value="1">Trainee</option>
+                            <option value="2">Junior</option>
+                        </select>
+                    </div>
+                    <p class="precioTotal"> Total a pagar: $<label id="total"></label></p>
+                    <div class="botones_comprar">
+                        <button class="btn" type="button" onclick="borrar()">Borrar</button>
+                        <button class="btn" type="button" onclick="validarYMostrarResumen()">Resumen</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -217,6 +284,7 @@
     </section>
 
     <script src="./js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 
